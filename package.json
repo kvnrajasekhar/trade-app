@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.7",
     "bootstrap": "^5.3.3",
+    "node": "^21.7.1",
     "nodemon": "^1.19.4",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.1",
@@ -49,5 +50,9 @@
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
   "main": "index.js",
   "author": "rajasekhar",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "trade-app"
+  }
 }
