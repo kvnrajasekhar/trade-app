@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+.main{
+    overflow-x: hidden;
+}
+.container,.container-1 {
+    display: flex;
+    justify-content: space-between;
+    height:100vh;
+    width: 100vw;
+    
+
+}
+
+.main-container ,.title{
+    width: 400px;
+    font-size: 3.5rem;
+    font-weight: 600;
+    margin: 120px 40px 0px 0px;
+    font-family: 'Russo One';
+}
+
+
+.main-img img.landing-image {
+    width: 300px;
+    float: right;
+    margin: 90px 0px 10px 0px;
+    flex: 1;
+}
+
+.main-img2 img.container-image{
+    width: 200px;
+    margin-right: 50px;
+}
+
