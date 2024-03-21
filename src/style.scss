@@ -1,0 +1,100 @@
+.width {
+  max-width: 600px;
+  margin: 0 auto;
+  width: auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+input[type="text"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  display: block;
+  width: 100%;
+  border-radius: 0;
+}
+.home-search {
+  padding: 40px 0;
+  text-align: center;
+  h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+  input {
+    border: 1px solid #666;
+    padding: 0 24px;
+    border-radius: 8px;
+    line-height: 54px;
+    width: 40%;
+    margin: 0 auto;
+  }
+}
+
+
+.home-cryptos {
+    padding-bottom: 60px;
+  h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+.home-crypto-list{
+    border-top:1px solid #ddd ;
+}
+
+.link-style{
+  text-decoration: none;
+}
+
+.home-crypto {
+  a {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  span {
+    display: block;
+  }
+}
+
+.home-crypto-img {
+  width: 50px;
+}
+
+.home-crypto-name {
+  flex: 1;
+  font-size: 20px;
+  color: #111;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.home-crypto-btc{
+    color: #111;
+    font-size: 16px;
+    img{
+      width: 17px;
+      display: inline-block;
+      margin: -3px 5px 0 0 ;
+      vertical-align: middle;
+    }
+}
+
+.home-crypto-inr{
+    color: #666;
+    font-size: 12px;
+}

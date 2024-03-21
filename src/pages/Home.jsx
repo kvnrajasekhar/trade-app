@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import homeStore from '../stores/homeStore'
+import Listitems from '../components/Listitems'
 
 export default function Home() {
     const store = homeStore()
@@ -10,16 +10,21 @@ export default function Home() {
 
     return (
         <div>
-            <input type="text" value={store.query} onChange={(e) => store.setQuery(e.target.value)} />
-            {store.coins.map(coin => (
-                    <div key={coin.id}>
-
-                        <Link to={`/${coin.id}`} >
-                            {coin.name}
-                        </Link>
+            <header className='home-search'>
+                <h2>Search for a coin</h2>
+                <input type="text" value={store.query} onChange={(e) => store.setQuery(e.target.value)} />
+            </header>
+            <div className='home-cryptos' >
+                <div className='width'>
+                    <h2> Trending Coins</h2>
+                    <div className='home-crypto-list'>
+                        {store.coins.map(coin => (
+                            <Listitems key={coin.id} coin={coin} />
+                        )
+                        )}
                     </div>
-                )
-            )}
+                </div>
+            </div>
 
         </div>
     )
