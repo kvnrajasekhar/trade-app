@@ -21,11 +21,14 @@ const homeStore = create((set) => ({
     coins: [],
     trending: [],
     query: '',
+    searching : false,
+    searched  : false,
     setQuery: debounce((value) => {
         set({ query: value });
         homeStore.getState().searchCoins();
     }, 500),
     searchCoins: async () => {
+        set({ searching :true})
         const { query, trending } = homeStore.getState();
         if (query.length > 2) {
             try {
@@ -35,12 +38,12 @@ const homeStore = create((set) => ({
                     image: coin.large,
                     id: coin.id,
                 }));
-                set({ coins });
+                set({ coins,searching : false ,searched : true});
             } catch (error) {
                 console.error("Error fetching search results:", error);
             }
         } else {
-            set({ coins: trending });
+            set({ coins: trending,searching : false , searched: false});
         }
     },
     fetchCoins: async () => {

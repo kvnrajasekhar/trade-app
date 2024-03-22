@@ -19,9 +19,10 @@ const showStore = create((set) => ({
                 Price: p,
             };
         });
-        set({ graphData ,dataRes})
-        console.log(dataRes)
+        set({ graphData:graphData ,dataRes:dataRes})
+        console.log(dataRes);
     },
+
 }));
 
 export default showStore;
