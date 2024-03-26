@@ -32,7 +32,7 @@ function Mynav() {
                 <Nav.Link href="#action2">Feauters</Nav.Link>
                 <Nav.Link href="#action2">Pricing</Nav.Link>
                 <Nav.Link href="#action2">Portfolio</Nav.Link>
-                <Nav.Link href="#action2">Dashboard</Nav.Link>
+                <Nav.Link href="Homecrypto">Dashboard</Nav.Link>
               </Nav>
               <Form className="d-flex">
                 <Form.Control

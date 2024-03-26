@@ -2,10 +2,10 @@ import React from 'react';
 import './Policy.css';
 // import Card from 'react-bootstrap/Card';
 // import CardGroup from 'react-bootstrap/CardGroup';
-import policy_img1 from './worldwide-2.jpg';
-import policy_img2 from './safe-2.jpg';
-import policy_img3 from './support.png';
-import policy_img4 from './best.jpeg'
+import policy_img1 from './sources/worldwide-2.jpg';
+import policy_img2 from './sources/safe-2.jpg';
+import policy_img3 from './sources/support.png';
+import policy_img4 from './sources/best.jpeg'
 
 function Policy() {
     return (

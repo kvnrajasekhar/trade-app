@@ -1,10 +1,10 @@
 import './Main.css';
-import img1 from './action-img.jpg';
-import img2 from './buy-and-sell.jpg';
-import img3 from './earn.jpg';
-import img4 from './send-.jpg';
-import img5 from './all.png';
-import img6 from './prime.png';
+import img1 from './sources/action-img.jpg';
+import img2 from './sources/buy-and-sell.jpg';
+import img3 from './sources/earn.jpg';
+import img4 from './sources/send-.jpg';
+import img5 from './sources/all.png';
+import img6 from './sources/prime.png';
 
 function Main() {
     return (

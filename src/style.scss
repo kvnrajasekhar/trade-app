@@ -50,11 +50,15 @@ input[type="text"] {
 .home-search-input {
   position: relative;
 
+  input {
+    padding-right: 40px;
+  }
+
   svg {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    right: 24px;
+    right: 30rem;
     animation: 2s rotating infinite linear;
     opacity: 0;
     transition: 0.2s opacity;
@@ -147,6 +151,8 @@ input[type="text"] {
 .show-details {
   padding-top: 40px;
   padding-bottom: 60px;
+  margin: 0 3rem;
+
   h2 {
     font-size: 26px;
     margin-bottom: 20px;

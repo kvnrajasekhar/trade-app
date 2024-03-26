@@ -7,12 +7,13 @@ export default function Home() {
     const classNames = require('classnames');
     const store = homeStore()
     React.useEffect(() => {
-       if (store.trending.length === 0) store.fetchCoins()
+        if (store.trending.length === 0) store.fetchCoins()
     }, [])
 
     return (
         <div>
             <header className='home-search'>
+
                 <h2>Search for a coin</h2>
                 <div className={classNames("home-search-input", { searching: store.searching })} >
                     <input type="text" value={store.query} onChange={(e) => store.setQuery(e.target.value)} />
@@ -23,7 +24,7 @@ export default function Home() {
             </header>
             <div className='home-cryptos' >
                 <div className='width'>
-                    <h2> {store.searched ?'Search results' : 'Trending Coins' }</h2>
+                    <h2> {store.searched ? 'Search results' : 'Trending Coins'}</h2>
                     <div className='home-crypto-list'>
                         {store.coins.map(coin => (
                             <Listitems key={coin.id} coin={coin} />

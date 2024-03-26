@@ -49,23 +49,23 @@ export default function Show() {
                 <h2>Details</h2>
                 <div className='show-details-row'>
                     <h3>Market kap rank</h3>
-                    <span>${store.dataRes.data.market_cap_rank}</span>
+                    <span>{store.dataRes.data.market_cap_rank}</span>
                 </div>
                 <div className='show-details-row'>
                     <h3>24 high </h3>
-                    <span>${store.dataRes.data.market_data.high_24h.inr}</span>
+                    <span>₹{store.dataRes.data.market_data.high_24h.inr}</span>
                 </div>
                 <div className='show-details-row'>
                     <h3>24 low</h3>
-                    <span>${store.dataRes.data.market_data.low_24h.inr}</span>
+                    <span>₹{store.dataRes.data.market_data.low_24h.inr}</span>
                 </div>
                 <div className='show-details-row'>
                     <h3>Circulating Supply</h3>
-                    <span>${store.dataRes.data.market_data.current_price.inr}</span>
+                    <span>₹{store.dataRes.data.market_data.current_price.inr}</span>
                 </div>
                 <div className='show-details-row'>
                     <h3>1Y change</h3>
-                    <span>${store.dataRes.data.market_data.price_change_percentage_1y.toFixed(2)}%</span>
+                    <span>{store.dataRes.data.market_data.price_change_percentage_1y.toFixed(2)}%</span>
                 </div>
             </div>
         </div>
