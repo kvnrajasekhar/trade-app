@@ -1,0 +1,10 @@
+.flex-Container {
+    display: flex;
+    width: 30px;
+    justify-content: center;
+}
+
+.coins-list:hover {
+    scale:1.5 ;
+
+}

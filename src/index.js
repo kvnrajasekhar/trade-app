@@ -14,7 +14,8 @@ root.render(
   <BrowserRouter>
     <Routes>
       <Route index element={<Home />} />
-      <Route path='Homecrypto' element={ <Homecrypto /> } />
+      <Route path='home' element={<Home />} />
+      <Route path='Homecrypto' element={<Homecrypto />} />
       <Route path="/:id" element={<Show />} />
     </Routes>
   </BrowserRouter>

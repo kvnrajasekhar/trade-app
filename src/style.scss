@@ -49,9 +49,10 @@ input[type="text"] {
 
 .home-search-input {
   position: relative;
-
+ 
   input {
     padding-right: 40px;
+    background-color: #fbfada;  
   }
 
   svg {
@@ -79,21 +80,20 @@ input[type="text"] {
   }
 }
 
-.home-crypto-list {
-  border-top: 1px solid #ddd;
-}
+
 
 .link-style {
   text-decoration: none;
 }
-
+.homecrypto-body{
+  background:#fbfada;
+}
 .home-crypto {
   a {
     display: flex;
     gap: 30px;
     align-items: center;
     padding: 20px 0;
-    border-bottom: 1px solid #ddd;
   }
 
   span {
@@ -108,13 +108,13 @@ input[type="text"] {
 .home-crypto-name {
   flex: 1;
   font-size: 20px;
-  color: #111;
+  color: #ADBC9F;
   font-weight: 600;
   text-decoration: none;
 }
 
 .home-crypto-btc {
-  color: #111;
+  color: #ADBC9F;
   font-size: 16px;
   img {
     width: 17px;
@@ -125,8 +125,12 @@ input[type="text"] {
 }
 
 .home-crypto-inr {
-  color: #666;
+  color:#ADBC9F;
   font-size: 12px;
+}
+
+.show-body{
+  background: #fbfada;
 }
 
 .show-header {

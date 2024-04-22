@@ -1,37 +1,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
-.main{
+
+.main {
     overflow-x: hidden;
+    background-color: #FBFADA;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1000 1000'%3E%3Cdefs%3E%3CradialGradient id='a' cx='500' cy='500' r='57.6%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FBFADA'/%3E%3Cstop offset='1' stop-color='%23FBFADA'/%3E%3C/radialGradient%3E%3CradialGradient id='b' cx='500' cy='500' r='48.5%25' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0' stop-color='%23FBFADA' stop-opacity='1'/%3E%3Cstop offset='1' stop-color='%23FBFADA' stop-opacity='0'/%3E%3C/radialGradient%3E%3C/defs%3E%3Crect fill='url(%23a)' width='1000' height='1000'/%3E%3Cg fill='none' stroke='%2312372A' stroke-width='0.7' stroke-miterlimit='10' %3E%3Ccircle cx='500' cy='500' r='725'/%3E%3Ccircle cx='500' cy='500' r='700'/%3E%3Ccircle cx='500' cy='500' r='675'/%3E%3Ccircle cx='500' cy='500' r='650'/%3E%3Ccircle cx='500' cy='500' r='625'/%3E%3Ccircle cx='500' cy='500' r='600'/%3E%3Ccircle cx='500' cy='500' r='575'/%3E%3Ccircle cx='500' cy='500' r='550'/%3E%3Ccircle cx='500' cy='500' r='525'/%3E%3Ccircle cx='500' cy='500' r='500'/%3E%3Ccircle cx='500' cy='500' r='475'/%3E%3Ccircle cx='500' cy='500' r='450'/%3E%3Ccircle cx='500' cy='500' r='425'/%3E%3Ccircle cx='500' cy='500' r='400'/%3E%3Ccircle cx='500' cy='500' r='375'/%3E%3Ccircle cx='500' cy='500' r='350'/%3E%3Ccircle cx='500' cy='500' r='325'/%3E%3Ccircle cx='500' cy='500' r='300'/%3E%3Ccircle cx='500' cy='500' r='275'/%3E%3Ccircle cx='500' cy='500' r='250'/%3E%3Ccircle cx='500' cy='500' r='225'/%3E%3Ccircle cx='500' cy='500' r='200'/%3E%3Ccircle cx='500' cy='500' r='175'/%3E%3Ccircle cx='500' cy='500' r='150'/%3E%3Ccircle cx='500' cy='500' r='125'/%3E%3Ccircle cx='500' cy='500' r='100'/%3E%3Ccircle cx='500' cy='500' r='75'/%3E%3Ccircle cx='500' cy='500' r='50'/%3E%3Ccircle cx='500' cy='500' r='25'/%3E%3C/g%3E%3Crect fill='url(%23b)' width='1000' height='1000'/%3E %3C/svg%3E");
+    background-size: cover;
+
 }
-.container,.container-1 {
+
+
+.container {
     display: flex;
-    justify-content: space-between;
-    height:100vh;
+    justify-content: center;
+    height: 100vh;
     width: 100vw;
-    
+
 
 }
 
-.main-container ,.title{
-    width: 400px;
+.main-container {
     font-size: 3.5rem;
     font-weight: 600;
-    margin: 120px 40px 0px 0px;
     font-family: 'Russo One';
 }
-
-
-.main-img img.landing-image {
-    width: 300px;
-    float: right;
-    margin: 90px 0px 10px 0px;
-    flex: 1;
+.logo_svg{
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 50%;
+}
+.title-1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    font-family: teodor;
+    font-size: 4rem;
+    color: #12312a;
 }
 
-.main-img2 img.container-image{
-    width: 200px;
-    margin-right: 50px;
+.sub-title {
+    margin: 32px auto 71px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: rgba(25, 56, 51, 0.8);
+    text-align: center;
 }
 
-.image-6{
-    float: right;
+/* for small scrrens */
+@media only screen and (max-width: 768px) {
+    .sub-title {
+        width: fit-content;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
 }

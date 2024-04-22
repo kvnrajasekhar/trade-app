@@ -1,6 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 import showStore from '../stores/showStore'
+import Mynav from '../Main/Mynav.js'
 import { Area, AreaChart, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 export default function Show() {
@@ -16,7 +17,8 @@ export default function Show() {
     }, [params.id, store])
     if (loading) return <div> Loading......</div>;
     return (
-        <div>
+        <div className='show-body'>
+        <Mynav />
             <header className='show-header'>
                 <img src={store.dataRes.data.image.large} alt="crypto-logo" />
                 <h2>
