@@ -24,7 +24,7 @@ export default function Footer() {
                         <a className="social-link" href="https://twitter.com/vnrajasekar" >
                             <FaXTwitter />
                         </a>
-                        <a className="social-link" href="https://www.linkedin.com/in/kanagala-venkata-naga-rajasekhar-65a987249/" >
+                        <a className="social-link" href="https://www.linkedin.com/in/kvnrs23" >
                             <FaLinkedinIn />
                         </a>
                     </div>
